@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Header, Main, Footer } from './styled';
+import { Cover, Header, Main, Footer } from './styled';
 
 import DarkMode from 'components/Darkmode';
 
@@ -12,6 +12,11 @@ import { pageYAction } from '../../reducers/event';
 const Layout = ({ children }) => {
   const dispatch = useDispatch();
   const { pageY } = useSelector(state => state.event);
+  const target = useRef();
+
+  const eventCancel = e => {
+    e.preventDefault();
+  };
 
   const handleScroll = () => {
     let pageYvalue = window.pageYOffset;
@@ -24,15 +29,15 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <>
+    <Cover href="" ref={target} onClick={eventCancel}>
       <Header pageY={pageY}>
         <div className="container">
           <Link href="/">
-            <a>
+            <button>
               <figure className="logo">
                 <img src="/favicons/android-icon-48x48.png" alt="Logo" />
               </figure>
-            </a>
+            </button>
           </Link>
           <DarkMode />
         </div>
@@ -44,7 +49,7 @@ const Layout = ({ children }) => {
           <div className="copyright-wrap">2020 © Kilo</div>
         </div>
       </Footer>
-    </>
+    </Cover>
   );
 };
 

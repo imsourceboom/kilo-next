@@ -76,5 +76,9 @@ export default createGlobalStyle`
         }
     }
 
+    span.pointer {
+        cursor: pointer;
+    }
+
     ${typography}
 `;

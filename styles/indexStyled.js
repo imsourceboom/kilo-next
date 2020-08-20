@@ -10,8 +10,6 @@ export const Section = styled.section`
   }
 
   .intro {
-    display: block;
-    cursor: initial;
     margin-top: 104px;
     font-weight: bold;
     font-size: 1.5em;

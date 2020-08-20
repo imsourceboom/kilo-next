@@ -2,13 +2,18 @@ import styled from 'styled-components';
 
 const Height = 56;
 
+export const Cover = styled.a`
+  display: block;
+  cursor: initial;
+`;
+
 export const Header = styled.header`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: ${Height}px;
-  border-bottom: ${({ pageY }) => pageY != 0 && '1px solid rgba(245, 245, 245, .1)'};
+  border-bottom: ${({ pageY }) => pageY > 0 && '1px solid rgba(245, 245, 245, .1)'};
   backdrop-filter: blur(4px);
 
   .container {
