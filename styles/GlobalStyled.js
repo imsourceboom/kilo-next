@@ -26,7 +26,7 @@ export default createGlobalStyle`
     body {
         display: block;
         overflow-x: hidden;
-        color: ${({ theme }) => theme.color} !important;
+        color: ${({ theme }) => theme.color};
         background-color: ${({ theme }) => theme.back};
         transition-property: color, background-color;
         transition-duration: 0.25s;
