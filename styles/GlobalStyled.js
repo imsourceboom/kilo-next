@@ -30,6 +30,7 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.back};
         transition-property: color, background-color;
         transition-duration: 0.25s;
+        -webkit-tap-highlight-color: transparent;
 
         * {
             outline: none;
@@ -73,7 +74,9 @@ export default createGlobalStyle`
             color: rgba(112, 112, 112, 0.4);
             font-size: 0.95rem;
             }
+
         }
+
     }
 
     span.pointer {

@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
       <Header pageY={pageY}>
         <div className="container">
           <Link href="/">
-            <button>
+            <span className="pointer">
               <figure className="logo">
                 <img src="/favicons/android-icon-48x48.png" alt="Logo" />
               </figure>
-            </button>
+            </span>
           </Link>
           <DarkMode />
         </div>
