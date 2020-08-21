@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0) scale(2);
-  z-index: -1;
+  z-index: -10;
   width: 300px;
   /* height: 100%; */
   display: flex;

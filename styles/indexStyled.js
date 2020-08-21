@@ -32,6 +32,8 @@ export const Section = styled.section`
 
     picture {
       img {
+        position: relative;
+        z-index:10;
         width: 93%;
         max-width: 381.062px;
         display: block;
