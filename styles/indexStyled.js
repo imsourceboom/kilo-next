@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
+const maxWidth = 1200;
 export const Section = styled.section`
   padding: 0 16px;
 
   .container {
     min-width: 320px;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -24,19 +24,24 @@ export const Section = styled.section`
   }
 
   article.preview {
+    /* max-width: ${maxWidth}px; */
+    position: relative;
     margin-top: 100px;
+    width: 100%;
 
-    img {
-      display: block;
-      max-height: 812px;
-      border-radius: 10px;
-      margin: 0 auto;
-      box-shadow: ${({ theme }) => theme.shadow};
+    picture {
+      img {
+        display: block;
+        max-height: 812px;
+        border-radius: 10px;
+        margin: 0 auto;
+        box-shadow: ${({ theme }) => theme.shadow};
+      }
     }
   }
 
   @media (min-width: 768px) {
-    .intro {
+    article.intro {
       margin-top: 120px;
       font-size: 2em;
 
@@ -47,6 +52,9 @@ export const Section = styled.section`
           display: none;
         }
       }
+    }
+    article.preview {
+      overflow:hidden;
     }
   }
 `;

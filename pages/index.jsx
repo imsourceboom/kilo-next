@@ -2,12 +2,13 @@ import React from 'react';
 
 import Layout from 'components/Layout';
 import Meta from 'components/Meta';
+import Circle from 'components/Circle';
 
 import { Section } from '../styles/indexStyled';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Meta title="Kilo" description="BlockChain" />
 
       <Layout>
@@ -25,6 +26,7 @@ const Home = () => {
               </p>
             </article>
             <article className="preview">
+              <Circle />
               <picture>
                 <source srcSet={require('@/preview.jpg?webp')} type="image/webp" />
                 <source srcSet={require('@/preview.jpg')} type="image/jpeg" />
@@ -34,7 +36,7 @@ const Home = () => {
           </div>
         </Section>
       </Layout>
-    </div>
+    </>
   );
 };
 
