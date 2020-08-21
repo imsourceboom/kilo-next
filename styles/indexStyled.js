@@ -28,6 +28,7 @@ export const Section = styled.section`
     position: relative;
     margin-top: 100px;
     width: 100%;
+    padding: 10px 0;
     overflow:hidden;
 
     picture {
