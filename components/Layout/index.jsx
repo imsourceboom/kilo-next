@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -12,7 +12,6 @@ import { pageYAction } from '../../reducers/event';
 const Layout = ({ children }) => {
   const dispatch = useDispatch();
   const { pageY } = useSelector(state => state.event);
-  const target = useRef();
 
   const eventCancel = e => {
     e.preventDefault();
@@ -29,13 +28,13 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <Cover href="" ref={target} onClick={eventCancel}>
+    <Cover href="" onClick={eventCancel}>
       <Header pageY={pageY}>
         <div className="container">
           <Link href="/">
             <span className="pointer">
               <figure className="logo">
-                <img src="/favicons/android-icon-48x48.png" alt="Logo" />
+                <img src={require('@/favicons/android-icon-48x48.png')} alt="Logo" />
               </figure>
             </span>
           </Link>

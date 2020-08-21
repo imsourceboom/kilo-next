@@ -9,7 +9,7 @@ export const Section = styled.section`
     margin: 0 auto;
   }
 
-  .intro {
+  article.intro {
     margin-top: 104px;
     font-weight: bold;
     font-size: 1.5em;
@@ -20,6 +20,18 @@ export const Section = styled.section`
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  article.preview {
+    margin-top: 100px;
+
+    img {
+      display: block;
+      max-height: 812px;
+      border-radius: 10px;
+      margin: 0 auto;
+      box-shadow: ${({ theme }) => theme.shadow};
     }
   }
 

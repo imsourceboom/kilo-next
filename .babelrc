@@ -8,7 +8,9 @@
             {
                 "root": "./",
                 "alias": {
-                    "components": "./components"
+                    "~": "./",
+                    "components": "./components",
+                    "@": "./public"
                 },
                 "extensions": [".js", ".jsx"]
             }

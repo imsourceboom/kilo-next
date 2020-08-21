@@ -13,7 +13,7 @@ const Home = () => {
       <Layout>
         <Section>
           <div className="container">
-            <div className="intro">
+            <article className="intro">
               <p>
                 킬로엑스는 프리톤 블록체인의 <br /> 올인원 봇입니다
               </p>
@@ -23,7 +23,14 @@ const Home = () => {
               <p>
                 앞으로 탐색기 등 여러 유용한 기능이 <br /> 더해질 예정입니다
               </p>
-            </div>
+            </article>
+            <article className="preview">
+              <picture>
+                <source srcSet={require('@/preview.jpg?webp')} type="image/webp" />
+                <source srcSet={require('@/preview.jpg')} type="image/jpeg" />
+                <img src={require('@/preview.jpg')} alt="" />
+              </picture>
+            </article>
           </div>
         </Section>
       </Layout>

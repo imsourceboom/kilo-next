@@ -4,7 +4,11 @@ const Height = 56;
 
 export const Cover = styled.a`
   display: block;
-  cursor: initial;
+  cursor: auto;
+
+  @media not all and (min-resolution: 0.001dpcm) {
+    cursor: default;
+  }
 `;
 
 export const Header = styled.header`

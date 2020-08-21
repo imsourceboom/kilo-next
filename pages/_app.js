@@ -29,7 +29,6 @@ const Kilo = ({ Component }) => {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      {console.log(darkMode)}
       <Head>
         <meta
           name="viewport"
