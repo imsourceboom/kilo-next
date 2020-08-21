@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const maxWidth = 1200;
 export const Section = styled.section`
-  padding: 0 16px;
 
   .container {
     min-width: 320px;
@@ -11,6 +10,7 @@ export const Section = styled.section`
 
   article.intro {
     margin-top: 104px;
+    padding: 0 16px;
     font-weight: bold;
     font-size: 1.5em;
 
@@ -28,9 +28,12 @@ export const Section = styled.section`
     position: relative;
     margin-top: 100px;
     width: 100%;
+    overflow:hidden;
 
     picture {
       img {
+        width: 93%;
+        max-width: 381.062px;
         display: block;
         max-height: 812px;
         border-radius: 10px;
@@ -54,7 +57,6 @@ export const Section = styled.section`
       }
     }
     article.preview {
-      overflow:hidden;
     }
   }
 `;
