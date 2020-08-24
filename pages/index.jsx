@@ -34,6 +34,8 @@ const Home = () => {
                 곧 출시됩니다...
               </div>
               <div className="devicons">
+                <img src={require('@/telegram.svg')} alt="" />
+                <span>in</span>
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#A4C439"
@@ -117,6 +119,8 @@ const Home = () => {
                 곧 출시됩니다...
               </div>
               <div className="devicons">
+                <img src={require('@/telegram.svg')} alt="" />
+                <span>in</span>
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#A4C439"

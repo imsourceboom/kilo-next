@@ -125,16 +125,24 @@ export const Section = styled.section`
       display: flex;
       align-items: center;
 
+      img {
+        width: 24px;
+      }
+
+      span {
+        margin: 0 20px;
+      }
+
       svg {
-        margin-right: 20px;
+        margin-right: 18px;
         width: 24px;
 
-        &:nth-child(2) {
+        &:nth-of-type(2) {
           fill: ${({ theme }) => theme.devicon};
           width: 23px;
         }
 
-        &:last-child {
+        &:last-of-type {
           margin-right: 0;
           width: 21px;
         }
@@ -176,7 +184,7 @@ export const Section = styled.section`
       flex-direction: row;
 
       .join-button {
-        margin-right: 30px;
+        margin-right: 35px;
         margin-bottom: 0;
       }
     }
