@@ -114,7 +114,7 @@ export const Section = styled.section`
       justify-content: center;
       align-items: center;
       background-color: rgba(231,235,237, 1);
-      color: rgba(207,216,220,1);
+      color: rgba(190,190,190,1);
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
