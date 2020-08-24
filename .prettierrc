@@ -8,5 +8,14 @@
   "useTabs": false,
   "singleQuote": true,
   "proseWrap": "always",
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "/**/*styled.js",
+      "options": {
+        "semi": false,
+        "printWidth": 80
+      }
+    }
+  ]
 }

@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
   transform: translate3d(-50%, -50%, 0) scale(2);
   z-index: -10;
   width: 300px;
-  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;

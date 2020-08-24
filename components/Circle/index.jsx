@@ -4,7 +4,7 @@ import { Wrapper } from './styled';
 
 const Circle = () => {
   return (
-    <Wrapper className="circle-wrap">
+    <Wrapper>
       <div className="hero-logo-circles">
         <img className="hero-circle" src={require('@/circles/circle0.svg')} />
         <img
