@@ -128,13 +128,14 @@ export const Section = styled.section`
     margin-top: 50px;
 
     .join-button {
+      position: relative;
       width: 220px;
       height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(231,235,237, 1);
-      color: rgba(190,190,190,1);
+      background: rgb(231, 235, 237);
+      color: rgba(160,160,160,1);
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
