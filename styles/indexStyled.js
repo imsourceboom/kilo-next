@@ -241,6 +241,13 @@ export const Section = styled.section`
     }
   }
 
+  @media (max-width: 767px) and (orientation: landscape) {
+    article.intro p,
+    article.suggest {
+      text-align: center;
+    }
+  }
+
   @media (min-width: 768px) {
     article.intro {
       margin-top: 120px;
