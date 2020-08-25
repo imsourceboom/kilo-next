@@ -6,7 +6,9 @@ export const Cover = styled.a`
   display: block;
   cursor: auto;
 
-  @media not all and (min-resolution: 0.001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm),
+    (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
     cursor: default;
   }
 `;
