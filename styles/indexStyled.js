@@ -51,10 +51,30 @@ export const Section = styled.section`
   }
 
   article.description {
-    margin: 160px 0;
-    padding: 160px 16px;
-    background-color: ${({ theme }) => theme.descriptionBack};
+    position: relative;
+    margin: 100px 0;
+    padding: 260px 16px;
+    background: ${({ theme }) => theme.descriptionBack};
+    background: linear-gradient(to bottom right, black, rgb(0, 132, 176));
     color: #dfe6e9;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 160px;
+      left: 0;
+    }
+
+    &::before {
+      top: 0;
+      background: ${({ theme }) => theme.gradientOpacityTop}
+    }
+    &::after {
+      bottom: 0;
+      background: ${({ theme }) => theme.gradientOpacityBottom}
+    }
 
     i {
       margin-right: 10px;
