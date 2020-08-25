@@ -205,6 +205,12 @@ export const Section = styled.section`
       justify-content: center;
       /* max-width: 700px; */
       margin: 0 auto;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        & {
+          display: none;
+        }
+      }
     }
 
     .more {

@@ -22,6 +22,12 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    & {
+      display: none;
+    }
+  }
+
   .hero-logo-circles {
     display: flex;
     align-items: center;
