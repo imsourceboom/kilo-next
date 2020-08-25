@@ -170,6 +170,54 @@ export const Section = styled.section`
     }
   }
 
+  article.something {
+    position: relative;
+    margin: 0 0 150px;
+    padding: 50px 0 ;
+
+    &::before {
+      content: 'SOMETHING MORE';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(6px);
+      font-size: 50px;
+      font-weight: bolder;
+      text-align: center;
+      transition: .4s;
+    }
+
+    /* &:hover {
+      &::before {
+        opacity: 0;
+      }
+    } */
+    
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* max-width: 700px; */
+      margin: 0 auto;
+    }
+
+    .more {
+      width: 95%;
+      max-width: 400px;
+      padding: 100px 0;
+      text-align: center;
+
+      i {
+        margin-right: 13px;
+      }
+    }
+  }
+
   article.suggest {
     font-size: 32px;
     padding: 0 16px;

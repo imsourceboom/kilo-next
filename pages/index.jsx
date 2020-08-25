@@ -100,12 +100,27 @@ const Home = () => {
                 </div>
                 <div className="box">
                   <h2 className="title">
-                    <i>🔒</i>안전합니다
+                    <i>👮‍♂️</i>안전합니다
                   </h2>
                   <p className="about">
                     텔레그램 보안 시스템 안에서 서비스를 이용합니다. 텔레그램은 메이저급
                     메세지 애플리케이션 중에서 보안이 가장 뛰어나기로 정평이 나 있습니다.
                   </p>
+                </div>
+              </div>
+            </article>
+            <article className="something">
+              <div className="wrapper">
+                <div className="more">
+                  <h1>
+                    <i>🔍</i>탐색기
+                  </h1>
+                </div>
+                <div className="more">
+                  <h1>
+                    <i>🔒</i>
+                    스테이킹
+                  </h1>
                 </div>
               </div>
             </article>
