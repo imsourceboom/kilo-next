@@ -23,6 +23,12 @@ export const Header = styled.header`
   border-bottom: ${({ pageY }) => pageY > 0 && '1px solid rgba(245, 245, 245, .1)'};
   backdrop-filter: blur(4px);
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    & {
+      background-color: ${({ theme }) => theme.back};
+    }
+  }
+
   .container {
     height: 100%;
     display: flex;
