@@ -242,9 +242,10 @@ export const Section = styled.section`
 
       p {
         text-align: center;
+        white-space: nowrap;
 
         br {
-          display: none;
+            display: none;
         }
       }
     }
@@ -287,7 +288,9 @@ export const Section = styled.section`
       text-align: center;
 
       br {
-        display: none;
+        &:not(.tablet) {
+          display: none;
+        }
       }
     }
 

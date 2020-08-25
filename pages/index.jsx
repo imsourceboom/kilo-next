@@ -126,7 +126,8 @@ const Home = () => {
             </article>
             <article className="suggest">
               <p>
-                한층 진화된 킬로엑스로 <br />톤 블록체인 생태계에 <br /> 참여해 보세요
+                한층 진화된 킬로엑스로 <br className="tablet" />톤 블록체인 생태계에{' '}
+                <br /> 참여해 보세요
               </p>
             </article>
             <article className="join">
