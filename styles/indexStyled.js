@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 const maxWidth = 1200;
 export const Section = styled.section`
-
   .container {
     min-width: 320px;
     margin: 0 auto;
   }
 
   i {
-    font-style:normal;
+    font-style: normal;
   }
 
   article.intro {
@@ -38,7 +37,7 @@ export const Section = styled.section`
     picture {
       img {
         position: relative;
-        z-index:10;
+        z-index: 10;
         width: 93%;
         max-width: 381.062px;
         display: block;
@@ -58,7 +57,8 @@ export const Section = styled.section`
     background: linear-gradient(to bottom right, black, rgb(0, 132, 176));
     color: #dfe6e9;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: '';
       display: block;
       position: absolute;
@@ -69,11 +69,11 @@ export const Section = styled.section`
 
     &::before {
       top: 0;
-      background: ${({ theme }) => theme.gradientOpacityTop}
+      background: ${({ theme }) => theme.gradientOpacityTop};
     }
     &::after {
       bottom: 0;
-      background: ${({ theme }) => theme.gradientOpacityBottom}
+      background: ${({ theme }) => theme.gradientOpacityBottom};
     }
 
     i {
@@ -85,7 +85,9 @@ export const Section = styled.section`
       padding-bottom: 2em;
     }
 
-    .kilox-is, .wrapper, .middle-comment {
+    .kilox-is,
+    .wrapper,
+    .middle-comment {
       margin: 0 auto;
       max-width: 650px;
     }
@@ -119,62 +121,10 @@ export const Section = styled.section`
     }
   }
 
-  article.join {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-
-    .join-button {
-      position: relative;
-      width: 220px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgb(231, 235, 237);
-      color: rgba(160,160,160,1);
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 20px;
-    }
-
-    .devicons {
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 24px;
-      }
-
-      span {
-        margin: 0 20px;
-      }
-
-      svg {
-        margin-right: 18px;
-        width: 24px;
-
-        &:nth-of-type(2) {
-          fill: ${({ theme }) => theme.devicon};
-          width: 23px;
-        }
-
-        &:last-of-type {
-          margin-right: 0;
-          width: 21px;
-        }
-      }
-    }
-  }
-
   article.something {
     position: relative;
     margin: 0 0 150px;
-    padding: 50px 0 ;
+    padding: 50px 0;
 
     &::before {
       content: 'SOMETHING MORE';
@@ -190,7 +140,7 @@ export const Section = styled.section`
       font-size: 50px;
       font-weight: bolder;
       text-align: center;
-      transition: .4s;
+      transition: 0.4s;
     }
 
     /* &:hover {
@@ -198,7 +148,7 @@ export const Section = styled.section`
         opacity: 0;
       }
     } */
-    
+
     .wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -233,7 +183,7 @@ export const Section = styled.section`
   article.contact {
     padding: 150px 16px 150px;
     font-size: 20px;
-    font-weight:lighter;
+    font-weight: lighter;
     text-align: center;
 
     i {
@@ -258,17 +208,8 @@ export const Section = styled.section`
         white-space: nowrap;
 
         br {
-            display: none;
+          display: none;
         }
-      }
-    }
-
-    article.join {
-      flex-direction: row;
-
-      .join-button {
-        margin-right: 35px;
-        margin-bottom: 0;
       }
     }
 
