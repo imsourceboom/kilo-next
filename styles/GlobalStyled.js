@@ -83,5 +83,9 @@ export default createGlobalStyle`
         cursor: pointer;
     }
 
+    i {
+        font-style: normal;
+    }
+
     ${typography}
 `;

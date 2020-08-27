@@ -10,6 +10,7 @@
                 "alias": {
                     "~": "./",
                     "components": "./components",
+                    "sections": "./sections",
                     "@": "./public"
                 },
                 "extensions": [".js", ".jsx"]

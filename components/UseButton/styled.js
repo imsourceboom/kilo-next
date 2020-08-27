@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.article`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 
   .join-button {
     position: relative;
@@ -69,12 +72,23 @@ export const Container = styled.article`
     }
   }
 
+  .guide {
+    display: flex;
+    justify-content: center;
+  }
+
   @media (min-width: 768px) {
-    flex-direction: row;
+    .wrapper {
+      flex-direction: row;
+    }
 
     .join-button {
       margin-right: 35px;
       margin-bottom: 0;
+    }
+
+    .guide {
+      /* flex: 1; */
     }
   }
 `;

@@ -3,18 +3,18 @@ import React from 'react';
 import Layout from 'components/Layout';
 import Meta from 'components/Meta';
 
-import Home from '../sections/Home';
+import Section from 'sections/Guide';
 
-const Index = () => {
+const Guide = () => {
   return (
     <>
-      <Meta title="Kilo" description="BlockChain" />
+      <Meta title="Kilo - Guide" />
 
       <Layout>
-        <Home />
+        <Section />
       </Layout>
     </>
   );
 };
 
-export default Index;
+export default Guide;
