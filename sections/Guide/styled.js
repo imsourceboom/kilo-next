@@ -22,7 +22,7 @@ export const TouchBox = styled.div`
   height: 50px;
   border: 2px solid #74b9ff;
   border-radius: 50%;
-  animation: ${touch} 1.5s alternate infinite;
+  animation: ${touch} 1s alternate infinite;
 
   &::before,
   &::after {
