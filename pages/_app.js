@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import wrapper from '../store/configureStore';
 
@@ -11,7 +12,7 @@ import { GlobalStyled } from '../styles';
 import { lightTheme, darkTheme } from '../styles/theme';
 import { darkModeAction } from '../reducers/event';
 
-const Kilo = ({ Component }) => {
+const Kilo = ({ Component, pageProps, router }) => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector(state => state.event);
 
@@ -45,7 +46,30 @@ const Kilo = ({ Component }) => {
         />
       </Head>
       <GlobalStyled />
-      <Component />
+      <AnimatePresence>
+        <motion.div
+          key={router.route}
+          initial="pageInitial"
+          animate="pageAnimate"
+          exit="pageExit"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+            },
+            pageAnimate: {
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+              },
+            },
+            pageExit: {
+              filter: `blur(3px)`,
+              opacity: 0,
+            },
+          }}>
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </ThemeProvider>
   );
 };
