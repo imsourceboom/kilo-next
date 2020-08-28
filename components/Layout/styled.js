@@ -20,7 +20,7 @@ export const Header = styled.header`
   z-index: 999;
   width: 100%;
   height: ${Height}px;
-  border-bottom: ${({ pageY, theme }) => pageY > 0 && theme.border};
+  border-bottom: ${({ pageY, theme }) => pageY > 55 && theme.border};
   backdrop-filter: blur(4px);
 
   /* ${({ pageY }) => {
