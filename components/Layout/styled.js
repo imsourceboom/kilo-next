@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Height = 56;
 
@@ -20,8 +20,16 @@ export const Header = styled.header`
   z-index: 999;
   width: 100%;
   height: ${Height}px;
-  border-bottom: ${({ pageY }) => pageY > 0 && '1px solid rgba(245, 245, 245, .1)'};
+  border-bottom: ${({ pageY, theme }) => pageY > 0 && theme.border};
   backdrop-filter: blur(4px);
+
+  /* ${({ pageY }) => {
+    if (pageY > 0) {
+      return css`
+        border-bottom: ${({ theme }) => theme.border};
+      `;
+    }
+  }} */
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     & {
