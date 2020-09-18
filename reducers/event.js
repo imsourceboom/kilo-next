@@ -1,10 +1,18 @@
 export const initialState = {
   pageY: 0,
   darkMode: null,
+  guidePath: null,
+  guideFirstChildPath: null,
+  guideSecondChildPath: null,
+  headerHeight: null,
 };
 
 export const PAGE_Y = 'PAGE_Y';
 export const DARK_MODE = 'DARK_MODE';
+export const GUIDE_PATH = 'GUIDE_PATH';
+export const GUIDE_FIRST_CHILD_PATH = 'GUIDE_FIRST_CHILD_PATH';
+export const GUIDE_SECOND_CHILD_PATH = 'GUIDE_SECOND_CHILD_PATH';
+export const HEADER_HEIGHT = 'HEADER_HEIGHT';
 
 export const pageYAction = data => {
   return {
@@ -16,6 +24,34 @@ export const pageYAction = data => {
 export const darkModeAction = data => {
   return {
     type: DARK_MODE,
+    data,
+  };
+};
+
+export const guidePathAction = data => {
+  return {
+    type: GUIDE_PATH,
+    data,
+  };
+};
+
+export const guideFirstChildPathAction = data => {
+  return {
+    type: GUIDE_FIRST_CHILD_PATH,
+    data,
+  };
+};
+
+export const guideSecondChildPathAction = data => {
+  return {
+    type: GUIDE_SECOND_CHILD_PATH,
+    data,
+  };
+};
+
+export const headerHeightAction = data => {
+  return {
+    type: HEADER_HEIGHT,
     data,
   };
 };
@@ -32,6 +68,30 @@ export const Event = (state = initialState, action) => {
       return {
         ...state,
         darkMode: action.data,
+      };
+    }
+    case GUIDE_PATH: {
+      return {
+        ...state,
+        guidePath: action.data,
+      };
+    }
+    case GUIDE_FIRST_CHILD_PATH: {
+      return {
+        ...state,
+        guideFirstChildPath: action.data,
+      };
+    }
+    case GUIDE_SECOND_CHILD_PATH: {
+      return {
+        ...state,
+        guideSecondChildPath: action.data,
+      };
+    }
+    case HEADER_HEIGHT: {
+      return {
+        ...state,
+        headerHeight: action.data,
       };
     }
     default: {

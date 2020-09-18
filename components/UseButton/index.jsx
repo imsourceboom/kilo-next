@@ -39,7 +39,7 @@ const UseButton = () => {
         </div>
       </div>
       <div className="guide">
-        <Link href="/guide">
+        <Link href="/guide/purchase/image">
           <span className="pointer">킬로엑스 사용법 →</span>
         </Link>
       </div>

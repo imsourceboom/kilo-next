@@ -149,4 +149,17 @@ export default css`
     -o-appearance: none;
     appearance: none;
   }
+
+  select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
 `;

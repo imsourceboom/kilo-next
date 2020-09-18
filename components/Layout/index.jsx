@@ -1,47 +1,22 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useCallback } from 'react';
+import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
-import { Cover, Header, Main, Footer } from './styled';
+import { Cover, Main } from './styled';
 
-import DarkMode from 'components/Darkmode';
-
-import throttling from '../../util/throttling';
-import { pageYAction } from '../../reducers/event';
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
-  const dispatch = useDispatch();
-  const { pageY } = useSelector(state => state.event);
+  const { headerHeight } = useSelector(state => state.event);
 
-  const eventCancel = e => {
+  const eventCancel = useCallback(e => {
     e.preventDefault();
-  };
-
-  const handleScroll = () => {
-    let pageYvalue = window.pageYOffset;
-    dispatch(pageYAction(pageYvalue));
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', throttling(handleScroll));
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <Cover href="" onClick={eventCancel}>
-      <Header pageY={pageY}>
-        <div className="container">
-          <Link href="/">
-            <span className="pointer">
-              <figure className="logo">
-                <img src={require('@/favicons/android-icon-48x48.png')} alt="Logo" />
-              </figure>
-            </span>
-          </Link>
-          <DarkMode />
-        </div>
-      </Header>
+      <Header />
       <motion.div
         initial="pageInitial"
         animate="pageAnimate"
@@ -61,16 +36,11 @@ const Layout = ({ children }) => {
             opacity: 0,
           },
         }}>
-        <Main>{children}</Main>
+        <Main headerHeight={headerHeight}>{children}</Main>
       </motion.div>
-      <Footer>
-        <div className="container">
-          <ul className="policy-wrap"></ul>
-          <div className="copyright-wrap">2020 © Kilo</div>
-        </div>
-      </Footer>
+      <Footer />
     </Cover>
   );
 };
 
-export default Layout;
+export default React.memo(Layout);
