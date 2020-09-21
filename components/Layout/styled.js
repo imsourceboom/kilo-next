@@ -16,5 +16,5 @@ export const Cover = styled.a`
 export const Main = styled.main`
   /* min-height: calc(100vh - ${Height}px) */
   min-height: 100vh;
-  padding-top: ${({ headerHeight }) => `${headerHeight}px`};
+  /* padding-top: ${({ headerHeight }) => `${headerHeight}px`}; */
 `;

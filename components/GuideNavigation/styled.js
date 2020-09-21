@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 export const Container = styled.nav`
   font-size: 1.35em;
   padding: 2em 0 1em;
-  display: ${({ pageY }) => (pageY >= 55 ? 'none' : 'block')};
+  margin-top: 56px;
+  /* display: ${({ pageY }) => (pageY >= 55 ? 'none' : 'block')}; */
 
   ${({ firstPath }) => {
     if (firstPath == 'purchase') {

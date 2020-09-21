@@ -6,8 +6,6 @@ import { Container } from './styled';
 const GuideNavigation = ({ firstPath, secondPath, pageY }) => {
   return (
     <Container pageY={pageY} firstPath={firstPath} secondPath={secondPath}>
-      {console.log(secondPath)}
-      {console.log(firstPath)}
       <div className="guide-wrapper">
         <div className="filter one">
           <span className="purchase-btn">

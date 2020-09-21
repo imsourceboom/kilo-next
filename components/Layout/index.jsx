@@ -1,5 +1,6 @@
-import React, { useCallback } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useCallback, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 
 import { Cover, Main } from './styled';
@@ -7,16 +8,52 @@ import { Cover, Main } from './styled';
 import Header from './Header';
 import Footer from './Footer';
 
+import GuideNavigation from 'components/GuideNavigation';
+
+import {
+  // pageYAction,
+  guidePathAction,
+  guideFirstChildPathAction,
+  guideSecondChildPathAction,
+  // headerHeightAction,
+} from '../../reducers/event';
+
 const Layout = ({ children }) => {
-  const { headerHeight } = useSelector(state => state.event);
+  const router = useRouter();
+  const dispatch = useDispatch();
+  const { guidePath, guideFirstChildPath, guideSecondChildPath } = useSelector(
+    state => state.event,
+  );
 
   const eventCancel = useCallback(e => {
     e.preventDefault();
   }, []);
 
+  useEffect(() => {
+    const pathname = router.pathname;
+    const arr = pathname.split('/');
+
+    if (arr[1] === 'guide') {
+      dispatch(guidePathAction(true));
+      dispatch(guideFirstChildPathAction(arr[2]));
+      dispatch(guideSecondChildPathAction(arr[3]));
+    } else {
+      dispatch(guidePathAction(false));
+      dispatch(guideFirstChildPathAction(null));
+      dispatch(guideSecondChildPathAction(null));
+    }
+  }, []);
+
   return (
     <Cover href="" onClick={eventCancel}>
       <Header />
+      {/* <h1>Test</h1> */}
+      {guidePath && (
+        <GuideNavigation
+          firstPath={guideFirstChildPath}
+          secondPath={guideSecondChildPath}
+        />
+      )}
       <motion.div
         initial="pageInitial"
         animate="pageAnimate"
@@ -36,7 +73,7 @@ const Layout = ({ children }) => {
             opacity: 0,
           },
         }}>
-        <Main headerHeight={headerHeight}>{children}</Main>
+        <Main>{children}</Main>
       </motion.div>
       <Footer />
     </Cover>

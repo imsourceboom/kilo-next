@@ -6,4 +6,4 @@ const TouchAnimation = ({ top, right, bottom, left }) => {
   return <Container top={top} right={right} bottom={bottom} left={left} />;
 };
 
-export default TouchAnimation;
+export default React.memo(TouchAnimation);
