@@ -13,7 +13,9 @@ const GuideVideo = () => {
               <i>💎</i> TON 구매하기
             </h1>
             <div className="video-box">
-              <video src="/guide/purchase/purchase.mp4" muted controls></video>
+              <video muted controls preload="metadata">
+                <source type="video/mp4" src="/guide/purchase/purchase.mp4" />
+              </video>
             </div>
           </div>
         </article>

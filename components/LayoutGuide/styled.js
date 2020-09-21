@@ -41,12 +41,12 @@ export const Container = styled.section`
     }
 
     .video-box {
-      display: flex;
-      justify-content: center;
+      width: 92vw;
+      max-width: 381.062px;
+      margin: 0 auto;
 
       video {
-        width: 92vw;
-        max-width: 381.062px;
+        width: 100%;
       }
     }
   }
