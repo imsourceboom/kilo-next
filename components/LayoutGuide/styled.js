@@ -17,18 +17,39 @@ export const Container = styled.section`
       margin-right: 10px;
     }
 
-    ul.images-list {
+    .images-list-box {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    li.image-bundle {
-      margin-bottom: 50px;
+    .image-bundle {
+      margin-bottom: 70px;
+
+      &::last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .sequence {
+      padding: 0 1em;
+      margin-bottom: 1.25em;
+
+      h3 {
+        margin-bottom: 0.4em;
+      }
+    }
+
+    p.order-description {
+      /* padding: 0 0.5em; */
+      margin: 0 auto;
+      font-size: 0.95em;
+      max-width: 350px;
     }
 
     figure.image-cover {
       position: relative;
+      margin-bottom: 1.3em;
     }
 
     img {
