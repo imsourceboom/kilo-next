@@ -13,7 +13,11 @@ const GuideVideo = () => {
               <i>💎</i> TON 구매하기
             </h1>
             <div className="video-box">
-              <video muted controls preload="metadata">
+              <video
+                muted
+                controls
+                preload="metadata"
+                poster={require('@/guide/purchase/poster.jpg')}>
                 <source type="video/mp4" src="/guide/purchase/purchase.mp4" />
               </video>
             </div>
