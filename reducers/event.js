@@ -1,4 +1,5 @@
 export const initialState = {
+  href: null,
   pageY: 0,
   darkMode: null,
   guidePath: null,
@@ -7,12 +8,20 @@ export const initialState = {
   headerHeight: null,
 };
 
+export const HREF = 'HREF';
 export const PAGE_Y = 'PAGE_Y';
 export const DARK_MODE = 'DARK_MODE';
 export const GUIDE_PATH = 'GUIDE_PATH';
 export const GUIDE_FIRST_CHILD_PATH = 'GUIDE_FIRST_CHILD_PATH';
 export const GUIDE_SECOND_CHILD_PATH = 'GUIDE_SECOND_CHILD_PATH';
 export const HEADER_HEIGHT = 'HEADER_HEIGHT';
+
+export const hrefAction = data => {
+  return {
+    type: HREF,
+    data,
+  };
+};
 
 export const pageYAction = data => {
   return {
@@ -58,6 +67,12 @@ export const headerHeightAction = data => {
 
 export const Event = (state = initialState, action) => {
   switch (action.type) {
+    case HREF: {
+      return {
+        ...state,
+        href: action.data,
+      };
+    }
     case PAGE_Y: {
       return {
         ...state,
