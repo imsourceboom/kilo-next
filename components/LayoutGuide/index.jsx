@@ -10,4 +10,4 @@ const LayoutGuide = ({ children }) => {
   );
 };
 
-export default LayoutGuide;
+export default React.memo(LayoutGuide);

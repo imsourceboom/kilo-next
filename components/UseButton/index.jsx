@@ -47,4 +47,4 @@ const UseButton = () => {
   );
 };
 
-export default UseButton;
+export default React.memo(UseButton);
