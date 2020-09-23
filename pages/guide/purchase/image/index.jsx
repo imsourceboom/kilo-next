@@ -64,7 +64,7 @@ const GuideImage = () => {
                   </figure>
                   <p className="order-description">
                     결제 버튼 대신에 이용하시는 거래소를 통해 비트코인 입금 주소로
-                    송금하실 수 있습니다
+                    송금하셔도 구매 가능합니다
                   </p>
                 </div>
                 <div className="image-bundle">

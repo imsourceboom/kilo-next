@@ -20,8 +20,11 @@ const GuideVideo = () => {
               <h1 className="title">
                 <i>🔑</i> TON 출금하기
               </h1>
-              <div className="video-box">
+              {/* <div className="video-box">
                 <video src="/purchase-guide.mp4"></video>
+              </div> */}
+              <div className="ready-box">
+                <h2>준비 중입니다</h2>
               </div>
             </div>
           </article>

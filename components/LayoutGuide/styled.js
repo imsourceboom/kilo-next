@@ -70,6 +70,11 @@ export const Container = styled.section`
         width: 100%;
       }
     }
+
+    .ready-box {
+      text-align: center;
+      padding: 100px 0 0;
+    }
   }
 
   @media (min-width: 768px) {

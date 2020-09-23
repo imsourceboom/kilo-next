@@ -9,6 +9,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 import GuideNavigation from 'components/GuideNavigation';
+import TopButton from 'components/TopButton';
 
 import {
   // pageYAction,
@@ -76,6 +77,7 @@ const Layout = ({ children }) => {
         <Main>{children}</Main>
       </motion.div>
       <Footer />
+      <TopButton />
     </Cover>
   );
 };
