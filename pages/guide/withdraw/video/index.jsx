@@ -24,7 +24,7 @@ const GuideVideo = () => {
                 <video src="/purchase-guide.mp4"></video>
               </div> */}
               <div className="ready-box">
-                <h2>준비 중입니다</h2>
+                <h2>준비 중입니다...</h2>
               </div>
             </div>
           </article>
