@@ -179,7 +179,34 @@ export const Section = styled.section`
     padding: 150px 16px 150px;
     font-size: 20px;
     font-weight: lighter;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-bottom: 0.5em;
+      width: 260px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: inline-block;
+
+      &.name {
+        width: 135px;
+        text-align: right;
+        margin-right: 0.5em;
+      }
+
+      &.bot_link {
+        color: #0088cc;
+        cursor: pointer;
+      }
+    }
 
     i {
       margin-right: 10px;
@@ -246,6 +273,18 @@ export const Section = styled.section`
     article.contact {
       padding: 180px 0;
       font-size: 24px;
+
+      p {
+        width: 300px;
+      }
+
+      span {
+        display: inline-block;
+
+        &.name {
+          width: 155px;
+        }
+      }
 
       i {
         margin-right: 12px;

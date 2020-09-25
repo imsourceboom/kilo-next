@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import Circle from 'components/Circle';
 import UseButton from 'components/UseButton';
@@ -6,6 +6,10 @@ import UseButton from 'components/UseButton';
 import { Section } from './styled';
 
 const Home = () => {
+  const botLink = useCallback(() => {
+    window.open('https://t.me/kilox_cs', '_blank');
+  }, []);
+
   return (
     <Section>
       <div className="container">
@@ -101,8 +105,18 @@ const Home = () => {
         <UseButton />
         <article className="contact">
           <p>
-            <i>✉️</i>
-            kilox_cs@gmail.com
+            <span className="name">텔레그램 문의 : </span>
+            <span onClick={botLink} className="bot_link">
+              @kilox_cs
+            </span>
+          </p>
+          <p>
+            <span className="name">이메일 문의 : </span>
+            <span>cs@kilox.io</span>
+          </p>
+          <p>
+            <span className="name">앱 문의 : </span>
+            <span>dev@kilox.io</span>
           </p>
         </article>
       </div>
