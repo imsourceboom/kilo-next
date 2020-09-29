@@ -31,7 +31,7 @@ const Header = () => {
         <Link href="/">
           <button type="button">
             <figure className="logo">
-              <img src={require('@/favicons/android-icon-48x48.png')} alt="Logo" />
+              <img src={require('@/logo.png')} alt="Logo" />
             </figure>
           </button>
         </Link>
