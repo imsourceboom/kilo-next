@@ -39,6 +39,7 @@ const Kilo = ({ Component, pageProps, router }) => {
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
         <title>Kilo</title>
         <Favicons />
+        <link rel="manifest" href="/manifest.json" />
         <link
           href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
           rel="stylesheet"
