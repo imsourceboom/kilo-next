@@ -1,5 +1,6 @@
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
+const withVideos = require('next-videos');
 
 module.exports = withPlugins([
   [
@@ -21,17 +22,18 @@ module.exports = withPlugins([
         optimizationLevel: 3,
       },
       pngquant: false,
-      //   gifsicle: {
-      //     interlaced: true,
-      //     optimizationLevel: 3,
-      //   },
-      //   svgo: {
-      //     // enable/disable svgo plugins here
-      //   },
-      // webp: {
-      //   preset: 'default',
-      //   quality: 75,
-      // },
+      gifsicle: {
+        interlaced: true,
+        optimizationLevel: 3,
+      },
+      svgo: {
+        // enable/disable svgo plugins here
+      },
+      webp: {
+        preset: 'default',
+        quality: 75,
+      },
     },
   ],
+  withVideos,
 ]);

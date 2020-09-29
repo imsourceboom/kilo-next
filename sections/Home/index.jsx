@@ -106,9 +106,9 @@ const Home = () => {
         <article className="contact">
           <p>
             <span className="name">텔레그램 문의 : </span>
-            <span onClick={botLink} className="bot_link">
+            <button onClick={botLink} className="bot_link">
               @kilox_cs
-            </span>
+            </button>
           </p>
           <p>
             <span className="name">이메일 문의 : </span>

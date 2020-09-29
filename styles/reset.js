@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export default css`
   body {
@@ -136,11 +136,13 @@ export default css`
     border: 0;
   }
   button {
+    padding: 0;
     border: 0;
     background: transparent;
+    font-size: inherit;
+    color: inherit;
     cursor: pointer;
   }
-
   input,
   textarea,
   button {

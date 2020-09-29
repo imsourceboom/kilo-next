@@ -25,8 +25,11 @@ const GuideVideo = () => {
                   muted
                   controls
                   preload="metadata"
-                  poster={require('@/guide/purchase/poster.jpg')}>
-                  <source type="video/mp4" src="/guide/purchase/purchase.mp4" />
+                  poster={require('@/guide/poster.jpg')}>
+                  <source
+                    type="video/mp4"
+                    src={require('@/guide/purchase/purchase.mp4')}
+                  />
                 </video>
               </div>
             </div>

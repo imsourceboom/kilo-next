@@ -29,11 +29,11 @@ const Header = () => {
     <Container pageY={pageY} ref={headerRef}>
       <div className="container">
         <Link href="/">
-          <span className="pointer">
+          <button type="button">
             <figure className="logo">
               <img src={require('@/favicons/android-icon-48x48.png')} alt="Logo" />
             </figure>
-          </span>
+          </button>
         </Link>
         <DarkMode />
       </div>

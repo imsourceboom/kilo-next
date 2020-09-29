@@ -20,12 +20,21 @@ const GuideVideo = () => {
               <h1 className="title">
                 <i>🔑</i> TON 출금하기
               </h1>
-              {/* <div className="video-box">
-                <video src="/purchase-guide.mp4"></video>
-              </div> */}
-              <div className="ready-box">
-                <h2>준비 중입니다...</h2>
+              <div className="video-box">
+                <video
+                  muted
+                  controls
+                  preload="metadata"
+                  poster={require('@/guide/poster.jpg')}>
+                  <source
+                    type="video/mp4"
+                    src={require('@/guide/withdraw/withdraw.mp4')}
+                  />
+                </video>
               </div>
+              {/* <div className="ready-box">
+                <h2>준비 중입니다...</h2>
+              </div> */}
             </div>
           </article>
         </LayoutGuide>

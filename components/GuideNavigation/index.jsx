@@ -10,28 +10,28 @@ const GuideNavigation = ({ firstPath, secondPath, pageY }) => {
         <div className="filter one">
           <span className="purchase-btn">
             <Link href="/guide/purchase/image">
-              <span className="pointer">
+              <button type="button">
                 <i>💎</i> TON 구매하기
-              </span>
+              </button>
             </Link>
           </span>
           <span className="withdraw-btn">
             <Link href="/guide/withdraw/image">
-              <span className="pointer">
+              <button type="button">
                 <i>🔑</i> TON 출금하기
-              </span>
+              </button>
             </Link>
           </span>
         </div>
         <div className="filter two">
           <span className="image-btn">
             <Link href={`/guide/${firstPath}/image`}>
-              <span className="pointer">이미지로 보기</span>
+              <button type="button">이미지로 보기</button>
             </Link>
           </span>
           <span className="video-btn">
             <Link href={`/guide/${firstPath}/video`}>
-              <span className="pointer">동영상으로 보기</span>
+              <button type="button">동영상으로 보기</button>
             </Link>
           </span>
         </div>

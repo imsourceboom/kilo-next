@@ -201,11 +201,10 @@ export const Section = styled.section`
         text-align: right;
         margin-right: 0.5em;
       }
+    }
 
-      &.bot_link {
-        color: #0088cc;
-        cursor: pointer;
-      }
+    button.bot_link {
+      color: #0088cc;
     }
 
     i {

@@ -16,9 +16,9 @@ const DarkMode = () => {
     <Container onClick={() => darkModeToggle()}>
       {darkMode ? (
         <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          // viewBox="0 0 24 24"
           fill="none"
           stroke="#dfe6e9"
           strokeWidth="1.5"

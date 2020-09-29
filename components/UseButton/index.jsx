@@ -40,7 +40,7 @@ const UseButton = () => {
       </div>
       <div className="guide">
         <Link href="/guide/purchase/image">
-          <span className="pointer">킬로엑스 사용법 →</span>
+          <button type="button">킬로엑스 사용법 →</button>
         </Link>
       </div>
     </Container>
