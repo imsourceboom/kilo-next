@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import {isFirefox, isIE} from 'react-device-detect'
 
 import Circle from 'components/Circle';
 import UseButton from 'components/UseButton';
@@ -11,7 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Section>
+    <Section firefox={isFirefox}>
       <div className="container">
         <article className="intro">
           <p>

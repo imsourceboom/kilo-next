@@ -12,6 +12,7 @@ export const Section = styled.section`
     padding: 0 16px;
     font-weight: bold;
     font-size: 1.5em;
+    padding-bottom: 30px;
 
     p {
       margin-bottom: 11px;
@@ -138,6 +139,7 @@ export const Section = styled.section`
       transition: 0.4s;
     }
 
+
     /* &:hover {
       &::before {
         opacity: 0;
@@ -150,6 +152,7 @@ export const Section = styled.section`
       justify-content: center;
       /* max-width: 700px; */
       margin: 0 auto;
+      opacity: ${({firefox}) =>  firefox && 0};
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         & {
@@ -173,6 +176,7 @@ export const Section = styled.section`
   article.suggest {
     font-size: 32px;
     padding: 0 16px;
+    padding-bottom: 30px;
   }
 
   article.contact {

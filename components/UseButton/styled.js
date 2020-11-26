@@ -7,7 +7,7 @@ export const Container = styled.article`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -75,6 +75,35 @@ export const Container = styled.article`
   .guide {
     display: flex;
     justify-content: center;
+    padding-bottom: 2.4em;
+  }
+
+  .app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .android-button {
+    margin-right: 2.3em;
+    cursor: pointer;
+
+    img {
+      width: 3.6em;
+      border-radius: 16.4%;
+      box-shadow: ${({theme}) => theme.shadow };
+    }
+  }
+
+  .google-play {
+    img {
+      width: 10em;
+    }
+
+    svg {
+      width: 10em;
+      height: auto;
+    }
   }
 
   @media (min-width: 768px) {
@@ -89,6 +118,21 @@ export const Container = styled.article`
 
     .guide {
       /* flex: 1; */
+    }
+
+    .android-button {
+      margin-right: 2.5em;
+      
+      img {
+        width: 4em;
+        border-radius: 16.4%;
+      }
+    }
+
+    .google-play {
+      svg {
+        width: 10.2em;
+      }
     }
   }
 `;
