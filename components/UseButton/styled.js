@@ -85,7 +85,6 @@ export const Container = styled.article`
   }
 
   .android-button {
-    margin-right: 2.3em;
     cursor: pointer;
 
     img {
@@ -93,6 +92,10 @@ export const Container = styled.article`
       border-radius: 16.4%;
       box-shadow: ${({theme}) => theme.shadow };
     }
+  }
+  
+  p {
+    margin: 0 1.55em;
   }
 
   .google-play {
@@ -121,12 +124,14 @@ export const Container = styled.article`
     }
 
     .android-button {
-      margin-right: 2.5em;
-      
       img {
         width: 4em;
         border-radius: 16.4%;
       }
+    }
+
+    p {
+      margin: 0 1.7em;
     }
 
     .google-play {
