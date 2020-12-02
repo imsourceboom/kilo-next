@@ -75,13 +75,19 @@ export const Container = styled.article`
   .guide {
     display: flex;
     justify-content: center;
-    padding-bottom: 2.4em;
+    padding-bottom: 3.8em;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .app-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .android-button {
@@ -90,15 +96,16 @@ export const Container = styled.article`
     img {
       width: 3.6em;
       border-radius: 16.4%;
-      box-shadow: ${({theme}) => theme.shadow };
+      box-shadow: ${({ theme }) => theme.shadow};
     }
   }
-  
+
   p {
     margin: 0 1.55em;
   }
 
-  .google-play {
+  .google-play,
+  .app-store {
     img {
       width: 10em;
     }
@@ -121,6 +128,15 @@ export const Container = styled.article`
 
     .guide {
       /* flex: 1; */
+    }
+
+    .app-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .bundle {
+      margin: 0 2.5em;
     }
 
     .android-button {

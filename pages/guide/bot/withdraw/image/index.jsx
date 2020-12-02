@@ -29,7 +29,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="1" right="7" />
-                    <img src={require('@/guide/withdraw/main.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/main.jpg')} alt="" />
                   </figure>
                 </div>
                 <div className="image-bundle">
@@ -38,7 +38,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="5" right="25" />
-                    <img src={require('@/guide/withdraw/mywallet.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/mywallet.jpg')} alt="" />
                   </figure>
                 </div>
                 <div className="image-bundle">
@@ -47,7 +47,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="5" right="5" />
-                    <img src={require('@/guide/withdraw/addressinput.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/addressinput.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
                     메시지 입력란에 받으시는 분의 주소를 입력하신 후 <br />
@@ -60,7 +60,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="10" right="5" />
-                    <img src={require('@/guide/withdraw/amount.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/amount.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
                     메시지 입력란에 보내시려는 금액을 입력하신 후 <br />
@@ -78,7 +78,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="5" right="25" />
-                    <img src={require('@/guide/withdraw/confirm.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/confirm.jpg')} alt="" />
                   </figure>
                 </div>
                 <div className="image-bundle">
@@ -86,7 +86,7 @@ const GuideImage = () => {
                     <h3>6. TON 출금 완료</h3>
                   </div>
                   <figure className="image-cover">
-                    <img src={require('@/guide/withdraw/complete.jpg')} alt="" />
+                    <img src={require('@/guide/bot/withdraw/complete.jpg')} alt="" />
                   </figure>
                 </div>
               </div>

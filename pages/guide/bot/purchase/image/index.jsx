@@ -29,7 +29,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="7" right="20" />
-                    <img src={require('@/guide/purchase/main.jpg')} alt="" />
+                    <img src={require('@/guide/bot/purchase/main.jpg')} alt="" />
                   </figure>
                 </div>
                 <div className="image-bundle">
@@ -38,7 +38,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="10" left="50" />
-                    <img src={require('@/guide/purchase/menu.jpg')} alt="" />
+                    <img src={require('@/guide/bot/purchase/menu.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
                     정해진 수량 버튼 대신에 메시지 입력란에 원하는 수량 입력 후 메시지
@@ -51,7 +51,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="7" right="20" />
-                    <img src={require('@/guide/purchase/confirm.jpg')} alt="" />
+                    <img src={require('@/guide/bot/purchase/confirm.jpg')} alt="" />
                   </figure>
                 </div>
                 <div className="image-bundle">
@@ -60,7 +60,7 @@ const GuideImage = () => {
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation bottom="13" right="30" />
-                    <img src={require('@/guide/purchase/payment.jpg')} alt="" />
+                    <img src={require('@/guide/bot/purchase/payment.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
                     결제 버튼 대신에 이용하시는 거래소를 통해 비트코인 입금 주소로
@@ -72,7 +72,7 @@ const GuideImage = () => {
                     <h3>5. TON 매수 완료</h3>
                   </div>
                   <figure className="image-cover">
-                    <img src={require('@/guide/purchase/result.jpg')} alt="" />
+                    <img src={require('@/guide/bot/purchase/result.jpg')} alt="" />
                   </figure>
                 </div>
               </div>

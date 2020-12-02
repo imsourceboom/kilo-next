@@ -8,25 +8,32 @@ import { Cover, Main } from './styled';
 import Header from './Header';
 import Footer from './Footer';
 
-import GuideNavigation from 'components/GuideNavigation';
+import AppGuideNavigation from 'components/AppGuideNavigation';
+import BotGuideNavigation from 'components/BotGuideNavigation';
 import TopButton from 'components/TopButton';
 
 import {
   // pageYAction,
-  guidePathAction,
-  guideFirstChildPathAction,
-  guideSecondChildPathAction,
+  guideBotPathAction,
+  guideBotFirstChildPathAction,
+  guideBotSecondChildPathAction,
+  guideAppPathAction,
+  guideAppKindAction,
   // headerHeightAction,
 } from '../../reducers/event';
 
 const Layout = ({ children }) => {
   const router = useRouter();
   const dispatch = useDispatch();
-  const { guidePath, guideFirstChildPath, guideSecondChildPath } = useSelector(
-    state => state.event,
-  );
+  const {
+    guideBotPath,
+    guideBotFirstChildPath,
+    guideBotSecondChildPath,
+    guideAppPath,
+    guideAppKind,
+  } = useSelector((state) => state.event);
 
-  const eventCancel = useCallback(e => {
+  const eventCancel = useCallback((e) => {
     e.preventDefault();
   }, []);
 
@@ -34,27 +41,35 @@ const Layout = ({ children }) => {
     const pathname = router.pathname;
     const arr = pathname.split('/');
 
-    if (arr[1] === 'guide') {
-      dispatch(guidePathAction(true));
-      dispatch(guideFirstChildPathAction(arr[2]));
-      dispatch(guideSecondChildPathAction(arr[3]));
+    if (arr[2] === 'bot') {
+      dispatch(guideBotPathAction(true));
+      dispatch(guideBotFirstChildPathAction(arr[3]));
+      dispatch(guideBotSecondChildPathAction(arr[4]));
     } else {
-      dispatch(guidePathAction(false));
-      dispatch(guideFirstChildPathAction(null));
-      dispatch(guideSecondChildPathAction(null));
+      dispatch(guideBotPathAction(false));
+      dispatch(guideBotFirstChildPathAction(null));
+      dispatch(guideBotSecondChildPathAction(null));
+    }
+
+    if (arr[2] === 'android' || arr[2] === 'ios') {
+      dispatch(guideAppPathAction(true));
+      dispatch(guideAppKindAction(arr[2]));
+    } else {
+      dispatch(guideAppPathAction(false));
+      dispatch(guideAppKindAction(null));
     }
   }, []);
 
   return (
     <Cover href="" onClick={eventCancel}>
       <Header />
-      {/* <h1>Test</h1> */}
-      {guidePath && (
-        <GuideNavigation
-          firstPath={guideFirstChildPath}
-          secondPath={guideSecondChildPath}
+      {guideBotPath && (
+        <BotGuideNavigation
+          firstPath={guideBotFirstChildPath}
+          secondPath={guideBotSecondChildPath}
         />
       )}
+      {guideAppPath && <AppGuideNavigation kind={guideAppKind} />}
       <motion.div
         initial="pageInitial"
         animate="pageAnimate"
