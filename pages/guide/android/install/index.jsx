@@ -10,6 +10,10 @@ import Meta from 'components/Meta';
 const AndroidInstall = () => {
   return (
     <>
+      <Meta
+        title="Kilox - Android용 Kilox Wallet 애플리케이션 설치 가이드"
+        description="프리톤 블록체인의 올인원 봇 킬로엑스의 Android용 Kilox Wallet 애플리케이션 설치 이미지 가이드입니다."
+      />
       <Layout>
         <LayoutGuide>
           <article className="app">

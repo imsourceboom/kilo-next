@@ -11,6 +11,12 @@ export const Container = styled.section`
     .title {
       padding: 16px;
       margin-bottom: 30px;
+
+      p.annotation {
+        font-size: 0.45em;
+        font-weight: normal;
+        color: #d44855;
+      }
     }
 
     i {

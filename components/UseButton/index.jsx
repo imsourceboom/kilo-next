@@ -19,7 +19,7 @@ const UseButton = () => {
   }, []);
 
   const newTabiOS = useCallback(() => {
-    // window.open('https://testflight.apple.com/join/xYSftkPx', '_blank');
+    window.open('https://testflight.apple.com/join/xYSftkPx', '_blank');
     // window.open('https://apps.apple.com/kr/app/testflight/id899247664', '_blank');
   }, []);
 
