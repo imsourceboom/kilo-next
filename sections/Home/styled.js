@@ -139,7 +139,6 @@ export const Section = styled.section`
       transition: 0.4s;
     }
 
-
     /* &:hover {
       &::before {
         opacity: 0;
@@ -152,7 +151,7 @@ export const Section = styled.section`
       justify-content: center;
       /* max-width: 700px; */
       margin: 0 auto;
-      opacity: ${({firefox}) =>  firefox && 0};
+      opacity: ${({ firefox }) => firefox && 0};
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         & {
@@ -190,7 +189,7 @@ export const Section = styled.section`
 
     p {
       margin-bottom: 0.5em;
-      width: 260px;
+      width: 264px;
 
       &:last-child {
         margin-bottom: 0;
@@ -278,7 +277,7 @@ export const Section = styled.section`
       font-size: 24px;
 
       p {
-        width: 300px;
+        width: 310px;
       }
 
       span {

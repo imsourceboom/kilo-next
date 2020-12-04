@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import {isFirefox, isIE} from 'react-device-detect'
+import { isFirefox, isIE } from 'react-device-detect';
 
 import Circle from 'components/Circle';
 import UseButton from 'components/UseButton';
@@ -117,7 +117,7 @@ const Home = () => {
           </p>
           <p>
             <span className="name">앱 문의 : </span>
-            <span>dev@kilox.io</span>
+            <span>devs@kilox.io</span>
           </p>
         </article>
       </div>
