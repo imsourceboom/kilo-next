@@ -117,7 +117,7 @@ const Home = () => {
           </p>
           <p>
             <span className="name">앱 문의 : </span>
-            <span>devs@kilox.io</span>
+            <span>dev@kilox.io</span>
           </p>
         </article>
       </div>

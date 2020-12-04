@@ -189,7 +189,7 @@ export const Section = styled.section`
 
     p {
       margin-bottom: 0.5em;
-      width: 264px;
+      width: 255px;
 
       &:last-child {
         margin-bottom: 0;
@@ -277,7 +277,7 @@ export const Section = styled.section`
       font-size: 24px;
 
       p {
-        width: 310px;
+        width: 299px;
       }
 
       span {
