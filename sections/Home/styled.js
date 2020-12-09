@@ -151,7 +151,8 @@ export const Section = styled.section`
       justify-content: center;
       /* max-width: 700px; */
       margin: 0 auto;
-      opacity: ${({ firefox }) => firefox && 0};
+      /* opacity: ${({ firefox }) => firefox && 0}; */
+      opacity: 0;
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         & {
