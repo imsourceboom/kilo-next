@@ -3,10 +3,12 @@ import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { AnimatePresence } from 'framer-motion';
+import { isIE } from 'react-device-detect';
 
 import wrapper from '../store/configureStore';
 
 import Favicons from 'components/Favicons';
+import BlockPage from 'components/BlockPage';
 
 import { GlobalStyled } from '../styles';
 import { lightTheme, darkTheme } from '../styles/theme';
@@ -14,7 +16,7 @@ import { darkModeAction } from '../reducers/event';
 
 const Kilo = ({ Component, pageProps, router }) => {
   const dispatch = useDispatch();
-  const { darkMode } = useSelector(state => state.event);
+  const { darkMode } = useSelector((state) => state.event);
 
   const detectDarkMode = () => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -48,7 +50,7 @@ const Kilo = ({ Component, pageProps, router }) => {
       </Head>
       <GlobalStyled />
       <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} key={router.route} />
+        {isIE ? <BlockPage /> : <Component {...pageProps} key={router.route} />}
       </AnimatePresence>
     </ThemeProvider>
   );
