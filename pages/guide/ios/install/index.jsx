@@ -67,7 +67,7 @@ const AndroidInstall = () => {
                     <img src={require('@/guide/ios/install/install.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
-                    TestFlight 설치 후 Kilox.io 홈페이지로 이동하세요
+                    TestFlight 설치 후 다시 Kilox.io 홈페이지로 이동하세요
                   </p>
                 </div>
                 <div className="image-bundle">
