@@ -19,7 +19,7 @@ const UseButton = () => {
   }, []);
 
   const newTabiOS = useCallback(() => {
-    window.open('https://testflight.apple.com/join/xYSftkPx', '_blank');
+    window.open('https://apps.apple.com/us/app/kilox-wallet/id1535086604', '_blank');
     // window.open('https://apps.apple.com/kr/app/testflight/id899247664', '_blank');
   }, []);
 
@@ -62,7 +62,12 @@ const UseButton = () => {
         <div className="bundle">
           <div className="app-wrapper">
             <div onClick={newTabAndroid} className="android-button">
-              <img src={require('@/kilox_app_logo.webp')} alt="" />
+              <img
+                src={
+                  'https://play-lh.googleusercontent.com/1siCbYovOktLBtxL86r0u7LLksSuYBMhJeBOZvdCFdBNWu3mx_BL3B-V1ckfhHTuHA=s180-rw'
+                }
+                alt=""
+              />
             </div>
             <p>for</p>
 
@@ -79,7 +84,12 @@ const UseButton = () => {
         <div className="bundle">
           <div className="app-wrapper">
             <div onClick={newTabiOS} className="android-button">
-              <img src={require('@/kilox_app_logo.webp')} alt="" />
+              <img
+                src={
+                  'https://play-lh.googleusercontent.com/1siCbYovOktLBtxL86r0u7LLksSuYBMhJeBOZvdCFdBNWu3mx_BL3B-V1ckfhHTuHA=s180-rw'
+                }
+                alt=""
+              />
             </div>
             <p>for</p>
 

@@ -33,26 +33,26 @@ const AndroidInstall = () => {
                 </div>
                 <div className="image-bundle">
                   <div className="sequence">
-                    <h3>2. Kilox Wallet 검색</h3>
+                    <h3>2. KiloX Wallet 검색</h3>
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation top="4" left="50" />
                     <img src={require('@/guide/android/install/home.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
-                    구글 플레이 스토어 검색창에 Kilox OR Kilox Wallet을 검색하세요
+                    구글 플레이 스토어 검색창에 KiloX Wallet을 검색하세요
                   </p>
                 </div>
                 <div className="image-bundle">
                   <div className="sequence">
-                    <h3>3. Kilox Wallet 선택</h3>
+                    <h3>3. KiloX Wallet 선택</h3>
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation top="21" right="30" />
                     <img src={require('@/guide/android/install/search.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
-                    검색 결과로 나온 Kilox Wallet을 선택하세요
+                    검색 결과로 나온 KiloX Wallet을 선택하세요
                   </p>
                 </div>
                 <div className="image-bundle">

@@ -20,9 +20,9 @@ const AndroidInstall = () => {
             <div className="wrapper">
               <h1 className="title">
                 <i>설치하기</i>
-                <p className="annotation">
+                {/* <p className="annotation">
                   iOS용 Kilox Wallet 애플리케이션은 현재 테스트 버전입니다
-                </p>
+                </p> */}
               </h1>
               <div className="images-list-box">
                 <div className="image-bundle">
@@ -36,26 +36,26 @@ const AndroidInstall = () => {
                 </div>
                 <div className="image-bundle">
                   <div className="sequence">
-                    <h3>2. TestFlight 검색</h3>
+                    <h3>2. KiloX Wallet 검색</h3>
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation top="17.5" left="60" />
                     <img src={require('@/guide/ios/install/home.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
-                    앱스토어 검색창에 TestFlight를 검색하세요
+                    앱스토어 검색창에 KiloX Wallet를 검색하세요
                   </p>
                 </div>
                 <div className="image-bundle">
                   <div className="sequence">
-                    <h3>3. TestFlight 선택</h3>
+                    <h3>3. KiloX Wallet 선택</h3>
                   </div>
                   <figure className="image-cover">
                     <TouchAnimation top="17" right="29" />
                     <img src={require('@/guide/ios/install/search.jpg')} alt="" />
                   </figure>
                   <p className="order-description">
-                    검색 결과로 나온 TestFlight를 선택하세요
+                    검색 결과로 나온 KiloX Wallet를 선택하세요
                   </p>
                 </div>
                 <div className="image-bundle">
@@ -66,21 +66,6 @@ const AndroidInstall = () => {
                     <TouchAnimation top="21.5" right="37" />
                     <img src={require('@/guide/ios/install/install.jpg')} alt="" />
                   </figure>
-                  <p className="order-description">
-                    TestFlight 설치 후 다시 Kilox.io 홈페이지로 이동하세요
-                  </p>
-                </div>
-                <div className="image-bundle">
-                  <div className="sequence">
-                    <h3>5. Kilox Wallet 설치</h3>
-                  </div>
-                  <figure className="image-cover">
-                    <TouchAnimation top="47" left="23" />
-                    <img src={require('@/guide/ios/install/link.jpg')} alt="" />
-                  </figure>
-                  <p className="order-description">
-                    iOS용 Kilox Wallet 로고를 선택합니다
-                  </p>
                 </div>
               </div>
             </div>
