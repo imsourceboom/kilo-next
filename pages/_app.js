@@ -41,6 +41,10 @@ const Kilo = ({ Component, pageProps, router }) => {
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
         <title>KiloX</title>
         <meta
+          name="google-site-verification"
+          content="GBjqlZBbBem_aVziJ_JCm02pFKixq5fA6y0PZAS3O4Y"
+        />
+        <meta
           name="naver-site-verification"
           content="489c08b44f7a7150cbbb27a0dca557bdc81c85db"
         />
