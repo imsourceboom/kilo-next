@@ -39,7 +39,11 @@ const Kilo = ({ Component, pageProps, router }) => {
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
-        <title>Kilo</title>
+        <title>KiloX</title>
+        <meta
+          name="naver-site-verification"
+          content="489c08b44f7a7150cbbb27a0dca557bdc81c85db"
+        />
         <Favicons />
         <link rel="manifest" href="/manifest.json" />
         <link

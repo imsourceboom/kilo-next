@@ -9,7 +9,7 @@ const GuideVideo = () => {
   return (
     <>
       <Meta
-        title="Kilox - TON 출금하기 동영상 가이드"
+        title="KiloX - TON 출금하기 동영상 가이드"
         description="프리톤 블록체인의 올인원 봇 킬로엑스의 TON 출금하기 동영상 가이드입니다."
       />
 
